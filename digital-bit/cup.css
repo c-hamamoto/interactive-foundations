@@ -2,13 +2,13 @@ body{
 
 }
 
-.stage{
+.cup{
     position: relative;
     width: 600px;
     height: 600px;
     background: lightgrey;
 }
-/*
+
 .square {
     width: 260px;
     height: 400px;
@@ -37,4 +37,4 @@ body{
     left: 410px;
     top: 162px;
     border-radius: 0px 10px 10px 0px;
-}*/
+}
