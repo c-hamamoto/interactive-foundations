@@ -1,94 +1,45 @@
-body{
-
-}
-
 * {
-    transition: all 1500ms ease;    
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
 }
 
-.cup{
-    position: relative;
-    width: 600px;
-    height: 600px;
-    background: purple;
+body{
+    height: 500vh;
+    width: 100vw;
+    font-family: courier;
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,1,255,1) 100%);
 }
 
-.cup:hover, .cup:hover .counter{
-    background: yellow;
-}
-
-.square {
-    width: 260px;
+#box {
+    width: 400px;
     height: 400px;
-    position: absolute;
     background: black;
-    top: 100px;
-    left: 150px;
-    border-radius: 20px 20px 120px 120px;
 
-    cursor: url('flame.png'), auto;   
+    position: absolute;
+    top: calc(500vh - 580px);
+    left: calc(50vw - 200px);
+    padding: 20px;
+
+    z-index: 1;
 }
 
-.square:hover, .square:hover ~ .handle {
-    background: red;
+#inner-box {
+    color: white;
+    font-size: 24px;
 }
 
-.square:hover, .square:hover ~ .handle, .square:hover ~ .counter {
-    filter: blur(10px);
-}
-
-/*.square:hover {
-    background: red;
-}
-
-*/
-.square:hover ~ div.handle {
-    background: red;
-}
-
-
-/*.square:hover, .square:hover ~ div.handle {
-    background: red;
-} */
-
-.handle {
+#ballot {
     width: 200px;
-    height: 250px;
-    background: black;
-    position: absolute;
-    left: 310px;
-    top: 130px;
-    border-radius: 30px;
-}
+    height: 380px;
+    position: fixed;
+    background: white;
+    left: calc(50vw - 100px);
+    top: calc(100vh - 571px);
+    padding: 10px;
 
-.counter {
-    width: 70px;
-    height: 183px;
-    background: purple;
-    position: absolute;
-    left: 410px;
-    top: 162px;
-    border-radius: 0px 10px 10px 0px;
+    z-index: 0;
+    text-align: center;
+    text-transform: uppercase;
 }
-
-/*.square{
-    width: 300px;
-    height: 500px;
-    background: red;  
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-}
-.handle{
-    width: 100px;
-    height: 300px;
-    background: blue;
-    position: relative;
-    bottom: 90px;
-    right: 4px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-}
-
-.inline{
-    display: inline-block;
-}*/
